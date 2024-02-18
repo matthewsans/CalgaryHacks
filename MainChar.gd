@@ -42,15 +42,15 @@ func _process(delta):
 		a = "R"
 		$AnimatedSprite2D.play()
 		velocity.x += 1
-	if Input.is_action_pressed("Left"):
+	if Input.is_action_pressed("ui_left"):
 		current_animation ="Run"
 		a = "L"
 		velocity.x -= 1
-	if Input.is_action_pressed("Down"):
+	if Input.is_action_pressed("ui_down"):
 		current_animation ="Run"
 		a = "D"
 		velocity.y += 1
-	if Input.is_action_pressed("Up"):
+	if Input.is_action_pressed("ui_up"):
 		current_animation ="Run"
 		a = "U"
 		velocity.y -= 1
