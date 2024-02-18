@@ -327,13 +327,15 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_du5ak"]
-radius = 27.0
-height = 84.0
+radius = 23.0
+height = 82.0
 
 [node name="MainChar" type="CharacterBody2D"]
 script = ExtResource("1_rcskv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+light_mask = 7
+visibility_layer = 7
 texture_filter = 1
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_kw8w6")
