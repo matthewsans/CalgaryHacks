@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://bnfb0tqtn0vr8"]
+[gd_scene load_steps=45 format=3 uid="uid://g2ysyowonc0j"]
 
 [ext_resource type="Script" path="res://MainChar.gd" id="1_rcskv"]
 [ext_resource type="Texture2D" uid="uid://c0j042eb6c7i2" path="res://assets/SimpleCharacter/Girl-Sheet.png" id="2_krowe"]
