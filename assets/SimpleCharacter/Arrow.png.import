@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqti23rrdk1x6"
-path="res://.godot/imported/Adam_sit2_16x16.png-4cec958f920ee07f55d9ad91eebf64cf.ctex"
+uid="uid://cb40u0q1lghud"
+path="res://.godot/imported/Arrow.png-5ac7db6d922248a0c8725f1df12228c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Characters_free/Adam_sit2_16x16.png"
-dest_files=["res://.godot/imported/Adam_sit2_16x16.png-4cec958f920ee07f55d9ad91eebf64cf.ctex"]
+source_file="res://assets/SimpleCharacter/Arrow.png"
+dest_files=["res://.godot/imported/Arrow.png-5ac7db6d922248a0c8725f1df12228c4.ctex"]
 
 [params]
 
