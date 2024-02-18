@@ -327,13 +327,15 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_du5ak"]
-radius = 9.0
+radius = 27.0
+height = 84.0
 
 [node name="MainChar" type="CharacterBody2D"]
 script = ExtResource("1_rcskv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_kw8w6")
 animation = &"IdleU"
 frame_progress = 0.872754
