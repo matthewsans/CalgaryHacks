@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfhs8ysi4jscq"
-path="res://.godot/imported/Amelia_phone_16x16.png-bb45a8ad3b0c2df758b8e9824743e9f9.ctex"
+uid="uid://dugk61q5xjxgn"
+path="res://.godot/imported/Bow.png-9344c8637b0134dcc1cdd8b6cd52372b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Characters_free/Amelia_phone_16x16.png"
-dest_files=["res://.godot/imported/Amelia_phone_16x16.png-bb45a8ad3b0c2df758b8e9824743e9f9.ctex"]
+source_file="res://assets/SimpleCharacter/Bow.png"
+dest_files=["res://.godot/imported/Bow.png-9344c8637b0134dcc1cdd8b6cd52372b.ctex"]
 
 [params]
 
