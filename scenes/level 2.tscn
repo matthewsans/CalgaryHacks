@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://brndc6snanpar"]
+[gd_scene load_steps=7 format=3 uid="uid://brndc6snanpar"]
 
-[ext_resource type="Texture2D" uid="uid://ckvta18g01toj" path="res://assets/Interiors_free/32x32/Interiors_free_32x32.png" id="1_ivf3y"]
-[ext_resource type="Texture2D" uid="uid://bsqbebqviokaw" path="res://assets/Interiors_free/32x32/Room_Builder_free_32x32.png" id="2_tktg1"]
+[ext_resource type="Texture2D" uid="uid://ckvta18g01toj" path="res://assets/Interiors_free/32x32/Interiors_free_32x32.png" id="1_k70fp"]
+[ext_resource type="Texture2D" uid="uid://bsqbebqviokaw" path="res://assets/Interiors_free/32x32/Room_Builder_free_32x32.png" id="2_opijy"]
+[ext_resource type="PackedScene" uid="uid://g2ysyowonc0j" path="res://scenes/main_char.tscn" id="3_g56y0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8k6fu"]
-texture = ExtResource("1_ivf3y")
+texture = ExtResource("1_k70fp")
 texture_region_size = Vector2i(32, 32)
 1:0/0 = 0
 2:0/0 = 0
@@ -1128,7 +1129,7 @@ texture_region_size = Vector2i(32, 32)
 5:23/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tcnl5"]
-texture = ExtResource("2_tktg1")
+texture = ExtResource("2_opijy")
 texture_region_size = Vector2i(32, 32)
 3:0/0 = 0
 4:0/0 = 0
@@ -1379,7 +1380,7 @@ tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_8k6fu")
 sources/1 = SubResource("TileSetAtlasSource_tcnl5")
 
-[node name="Node2D" type="Node2D"]
+[node name="world 2" type="Node2D"]
 
 [node name="Floor" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_7bnpn")
@@ -1403,3 +1404,5 @@ layer_0/tile_data = PackedInt32Array(35, 327681, 2, 65571, 720897, 2, 0, 393217,
 tile_set = SubResource("TileSet_7bnpn")
 rendering_quadrant_size = 32
 format = 2
+
+[node name="MainChar" parent="." instance=ExtResource("3_g56y0")]
