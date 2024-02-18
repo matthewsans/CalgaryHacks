@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://scenes/Computer.gd" id="5_i0mre"]
 [ext_resource type="PackedScene" uid="uid://ck8q5p88nqby1" path="res://interaction/interaction_area/interaction_area.tscn" id="6_srlth"]
 [ext_resource type="Script" path="res://scenes/PotL.gd" id="7_0omtr"]
-[ext_resource type="PackedScene" uid="uid://cvedhsno2i6b2" path="res://scenes/PopUp.tscn" id="7_jtelp"]
+[ext_resource type="PackedScene" uid="uid://bcaswnev5etqc" path="res://scenes/PopUp.tscn" id="7_jtelp"]
 [ext_resource type="Script" path="res://scenes/PotR.gd" id="8_36vju"]
 [ext_resource type="Script" path="res://scenes/PotM.gd" id="9_4djkh"]
 [ext_resource type="Script" path="res://scenes/Elevator.gd" id="10_b1tie"]
