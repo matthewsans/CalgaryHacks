@@ -336,7 +336,7 @@ script = ExtResource("1_rcskv")
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_kw8w6")
 animation = &"IdleU"
-frame_progress = 0.0369041
+frame_progress = 0.872754
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_du5ak")
