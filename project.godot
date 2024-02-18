@@ -11,7 +11,11 @@ config_version=5
 [application]
 
 config/name="Calgary Hacks"
+<<<<<<< HEAD
+run/main_scene="res://scenes/main.tscn"
+=======
 run/main_scene="res://scenes/main_char.tscn"
+>>>>>>> dc15a9ee987ec4096ed4c99fb38b4b1c6279bf6e
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
