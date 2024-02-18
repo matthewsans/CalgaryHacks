@@ -1,0 +1,172 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvedhsno2i6b2"]
+
+[ext_resource type="Script" path="res://scenes/PopUp.gd" id="1_vam3y"]
+
+[node name="Popup" type="Window"]
+mode = 3
+title = "CPA Quiz"
+initial_position = 2
+size = Vector2i(450, 200)
+script = ExtResource("1_vam3y")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(450, 200)
+offset_right = 450.0
+offset_bottom = 200.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.729412, 0.839216, 0.909804, 0.384314)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Q1" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+size_flags_vertical = 0
+
+[node name="Q1" type="VBoxContainer" parent="Q1"]
+layout_mode = 1
+offset_right = 429.0
+offset_bottom = 171.0
+
+[node name="Label" type="Label" parent="Q1/Q1"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "The Tax-Free Savings Account (TFSA) contribution room 
+accumulates every year starting from the year a person                                       
+turns 18, even if they do not open a TFSA account 
+immediately."
+vertical_alignment = 1
+
+[node name="True1" type="Button" parent="Q1/Q1"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "True "
+
+[node name="False1" type="Button" parent="Q1/Q1"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "False
+"
+
+[node name="Q2" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="Q2" type="VBoxContainer" parent="Q2"]
+layout_mode = 0
+offset_right = 48.0
+offset_bottom = 66.0
+
+[node name="Label" type="Label" parent="Q2/Q2"]
+layout_mode = 2
+text = "The Registered Retirement Savings Plan (RRSP) 
+contribution limit is the same for everyone, regardless of 
+their income."
+
+[node name="True2" type="Button" parent="Q2/Q2"]
+layout_mode = 2
+text = "True
+"
+
+[node name="False2" type="Button" parent="Q2/Q2"]
+layout_mode = 2
+text = "False"
+
+[node name="Q3" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="Q3" type="VBoxContainer" parent="Q3"]
+layout_mode = 0
+offset_right = 48.0
+offset_bottom = 66.0
+
+[node name="Label" type="Label" parent="Q3/Q3"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "You can only have one TFSA account at any time in Canada."
+
+[node name="True3" type="Button" parent="Q3/Q3"]
+layout_mode = 2
+text = "True
+"
+
+[node name="False3" type="Button" parent="Q3/Q3"]
+layout_mode = 2
+text = "False"
+
+[node name="Q4" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="Q4" type="VBoxContainer" parent="Q4"]
+layout_mode = 0
+offset_right = 48.0
+offset_bottom = 66.0
+
+[node name="Label" type="Label" parent="Q4/Q4"]
+layout_mode = 2
+text = "The interest rate on a Canada Student Loan is always fixed."
+
+[node name="True4" type="Button" parent="Q4/Q4"]
+layout_mode = 2
+text = "True
+"
+
+[node name="False4" type="Button" parent="Q4/Q4"]
+layout_mode = 2
+text = "False"
+
+[node name="Correct" type="Label" parent="."]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -31.0
+offset_top = -23.0
+offset_right = 31.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.196078, 0.627451, 0.368627, 1)
+text = "Correct!"
+
+[node name="Incorrect" type="Label" parent="."]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -31.0
+offset_top = -23.0
+offset_right = 31.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.956863, 0.192157, 0.184314, 1)
+text = "Incorrect :("
+
+[connection signal="pressed" from="Q1/Q1/True1" to="." method="_on_true_1_pressed"]
+[connection signal="pressed" from="Q1/Q1/False1" to="." method="_on_false_1_pressed"]
+[connection signal="pressed" from="Q2/Q2/True2" to="." method="_on_true_2_pressed"]
+[connection signal="pressed" from="Q2/Q2/False2" to="." method="_on_false_2_pressed"]
+[connection signal="pressed" from="Q3/Q3/True3" to="." method="_on_true_3_pressed"]
+[connection signal="pressed" from="Q3/Q3/False3" to="." method="_on_false_3_pressed"]
+[connection signal="pressed" from="Q4/Q4/True4" to="." method="_on_true_4_pressed"]
+[connection signal="pressed" from="Q4/Q4/False4" to="." method="_on_false_4_pressed"]
