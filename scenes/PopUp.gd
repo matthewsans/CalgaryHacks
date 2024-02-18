@@ -26,6 +26,7 @@ func _on_false_2_pressed():
 	$Correct.show()
 	$Q2.hide()
 	$Q3.show()
+	$Correct.hide()
 	pass # Replace with function body.
 	
 
@@ -33,6 +34,7 @@ func _on_true_2_pressed():
 	$Incorrect.show()
 	$Q2.hide()
 	$Q3.show()
+	$Incorrect.hide()
 	pass # Replace with function body.
 
 
