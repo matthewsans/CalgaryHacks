@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://6trj0230dkv4"]
+[gd_scene load_steps=51 format=3 uid="uid://6trj0230dkv4"]
 
 [ext_resource type="Texture2D" uid="uid://bsqbebqviokaw" path="res://assets/Interiors_free/32x32/Room_Builder_free_32x32.png" id="1_gfydm"]
 [ext_resource type="Texture2D" uid="uid://ckvta18g01toj" path="res://assets/Interiors_free/32x32/Interiors_free_32x32.png" id="2_ly36h"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://scenes/PotL.gd" id="7_0omtr"]
 [ext_resource type="Script" path="res://scenes/PotR.gd" id="8_36vju"]
 [ext_resource type="Script" path="res://scenes/PotM.gd" id="9_4djkh"]
+[ext_resource type="Script" path="res://scenes/Elevator.gd" id="10_b1tie"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pbr57"]
 texture = ExtResource("2_ly36h")
@@ -4229,6 +4230,9 @@ size = Vector2(24, 5)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_52yu1"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2oa3"]
+size = Vector2(73, 42)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="Floor" type="TileMap" parent="."]
@@ -4266,7 +4270,7 @@ texture_filter = 1
 position = Vector2(-2, 5)
 
 [node name="boundaries" type="StaticBody2D" parent="."]
-position = Vector2(772, 76)
+position = Vector2(769, 76)
 
 [node name="Wallx5" type="CollisionShape2D" parent="boundaries"]
 position = Vector2(-766, -55)
@@ -4401,3 +4405,13 @@ script = ExtResource("9_4djkh")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/PotM/InteractionArea"]
 position = Vector2(0, 9.5)
 shape = SubResource("CapsuleShape2D_52yu1")
+
+[node name="Elevator" type="CollisionShape2D" parent="boundaries"]
+script = ExtResource("10_b1tie")
+
+[node name="InteractionArea" parent="boundaries/Elevator" instance=ExtResource("6_srlth")]
+action_name = "Go Up"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/Elevator/InteractionArea"]
+position = Vector2(-289.5, -38)
+shape = SubResource("RectangleShape2D_d2oa3")
