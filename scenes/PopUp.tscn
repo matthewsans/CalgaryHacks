@@ -160,6 +160,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.956863, 0.192157, 0.184314, 1)
 text = "Incorrect :("
 
+[connection signal="close_requested" from="." to="." method="_on_close_requested"]
 [connection signal="pressed" from="Q1/Q1/True1" to="." method="_on_true_1_pressed"]
 [connection signal="pressed" from="Q1/Q1/False1" to="." method="_on_false_1_pressed"]
 [connection signal="pressed" from="Q2/Q2/True2" to="." method="_on_true_2_pressed"]
