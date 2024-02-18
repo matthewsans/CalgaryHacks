@@ -1,12 +1,10 @@
-[gd_scene load_steps=18 format=3 uid="uid://brndc6snanpar"]
+[gd_scene load_steps=6 format=3 uid="uid://brndc6snanpar"]
 
-[ext_resource type="Texture2D" uid="uid://ckvta18g01toj" path="res://assets/Interiors_free/32x32/Interiors_free_32x32.png" id="1_k70fp"]
-[ext_resource type="Texture2D" uid="uid://bsqbebqviokaw" path="res://assets/Interiors_free/32x32/Room_Builder_free_32x32.png" id="2_opijy"]
-[ext_resource type="PackedScene" uid="uid://g2ysyowonc0j" path="res://scenes/main_char.tscn" id="3_g56y0"]
-[ext_resource type="Script" path="res://scenes/Elevator2.gd" id="4_28ehm"]
+[ext_resource type="Texture2D" uid="uid://ckvta18g01toj" path="res://assets/Interiors_free/32x32/Interiors_free_32x32.png" id="1_ivf3y"]
+[ext_resource type="Texture2D" uid="uid://bsqbebqviokaw" path="res://assets/Interiors_free/32x32/Room_Builder_free_32x32.png" id="2_tktg1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8k6fu"]
-texture = ExtResource("1_k70fp")
+texture = ExtResource("1_ivf3y")
 texture_region_size = Vector2i(32, 32)
 1:0/0 = 0
 2:0/0 = 0
@@ -1130,7 +1128,7 @@ texture_region_size = Vector2i(32, 32)
 5:23/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tcnl5"]
-texture = ExtResource("2_opijy")
+texture = ExtResource("2_tktg1")
 texture_region_size = Vector2i(32, 32)
 3:0/0 = 0
 4:0/0 = 0
@@ -1381,44 +1379,7 @@ tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_8k6fu")
 sources/1 = SubResource("TileSetAtlasSource_tcnl5")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_48ldo"]
-size = Vector2(55, 20)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_rgtg3"]
-a = Vector2(-448, -170)
-b = Vector2(691, -171)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_5slip"]
-a = Vector2(-442, 451)
-b = Vector2(-445, -171)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_2iuxn"]
-a = Vector2(687, 451)
-b = Vector2(-442, 450)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_22taq"]
-a = Vector2(689, -175)
-b = Vector2(687, 450)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_fva10"]
-a = Vector2(659, 295)
-b = Vector2(660, 150)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_j3exj"]
-a = Vector2(6, -56)
-b = Vector2(55, -51)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rnauc"]
-size = Vector2(71, 188.169)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_4afcd"]
-a = Vector2(4.3291, -28.6373)
-b = Vector2(44.3291, -27.6373)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4x0jc"]
-size = Vector2(76, 73)
-
-[node name="world 2" type="Node2D"]
+[node name="Node2D" type="Node2D"]
 
 [node name="Floor" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_7bnpn")
@@ -1436,57 +1397,9 @@ layer_0/tile_data = PackedInt32Array(15, 65537, 5, 65551, 65537, 6, 16, 131073, 
 tile_set = SubResource("TileSet_7bnpn")
 rendering_quadrant_size = 32
 format = 2
-layer_0/tile_data = PackedInt32Array(35, 327681, 2, 65571, 720897, 2, 0, 393217, 2, 1245184, 393217, 0, 1179648, 851969, 2, 1114112, 851969, 2, 1048576, 851969, 2, 983040, 851969, 2, 917504, 851969, 2, 851968, 851969, 2, 786432, 851969, 2, 720896, 851969, 2, 655360, 851969, 2, 589824, 851969, 2, 524288, 851969, 2, 458752, 851969, 2, 393216, 851969, 2, 327680, 851969, 2, 262144, 851969, 2, 196608, 851969, 2, 131072, 851969, 2, 65536, 851969, 2, 19, 0, 26, 65555, 0, 27, 20, 65536, 26, 65556, 65536, 27, 21, 131072, 26, 65557, 131072, 27, 1114113, 851968, 28, 1179649, 851968, 29, 1114114, 917504, 28, 1179650, 917504, 29, 655374, 851968, 28, 720910, 851968, 29, 655375, 917504, 28, 720911, 917504, 29, 983065, 851968, 28, 1048601, 851968, 29, 983066, 917504, 28, 1048602, 917504, 29, 262175, 851968, 28, 327711, 851968, 29, 262176, 917504, 28, 327712, 917504, 29, 327702, 851968, 28, 393238, 851968, 29, 327703, 917504, 28, 393239, 917504, 29, 327682, 851968, 28, 393218, 851968, 29, 327683, 851968, 29, 393219, 917504, 29, 262147, 851968, 28, 262148, 917504, 28, 327684, 917504, 29, 22, 196608, 26, 65558, 196608, 27, 1245219, 327681, 0, 1310755, 327681, 1, 1310720, 393217, 1, 17, 131072, 24, 65553, 131072, 25, 18, 196608, 24, 65554, 196608, 25, 458785, 655360, 40, 524321, 655360, 41, 458786, 720896, 40, 524322, 720896, 41, 393222, 458752, 45, 393223, 524288, 45, 393224, 589824, 45, 458758, 458752, 46, 458759, 524288, 46, 458760, 589824, 46, 524294, 458752, 46, 524295, 524288, 46, 524296, 589824, 46, 589830, 458752, 46, 589831, 524288, 46, 589832, 589824, 46, 655366, 458752, 46, 655367, 524288, 46, 655368, 589824, 46, 720902, 458752, 46, 720903, 524288, 46, 720904, 589824, 46, 786438, 458752, 46, 786439, 524288, 46, 786440, 589824, 46, 851974, 458752, 47, 851975, 524288, 47, 851976, 589824, 47, 458757, 655360, 31, 524293, 655360, 32, 589829, 655360, 31, 655365, 655360, 32, 720901, 655360, 31, 786437, 655360, 32, 851973, 655360, 31, 917509, 655360, 32, 458761, 720896, 33, 524297, 720896, 34, 589833, 720896, 33, 655369, 720896, 34, 720905, 720896, 33, 786441, 720896, 34, 851977, 720896, 33, 917513, 720896, 34, 4, 851968, 56, 65540, 851968, 57, 131076, 851968, 58, 10, 851968, 56, 65546, 851968, 57, 131082, 851968, 58, 16, 851968, 56, 65552, 851968, 57, 131088, 851968, 58, 25, 851968, 56, 65561, 851968, 57, 131097, 851968, 58, 31, 851968, 56, 65567, 851968, 57, 131103, 851968, 58, 1179651, 0, 68, 1245187, 0, 69, 65538, 131072, 68, 131074, 131072, 69, 655393, 196608, 80, 720929, 196608, 81, 786465, 196608, 83, 655394, 262144, 80, 720930, 262144, 81, 786466, 262144, 83, 852001, 196608, 83, 852002, 262144, 83, 917537, 196608, 83, 917538, 262144, 83, 983073, 196608, 82, 983074, 262144, 82, 720927, 196608, 74, 917535, 196608, 74, 1179682, 655360, 62, 1245218, 655360, 63, 786462, 131072, 51, 851998, 131072, 52, 786463, 65536, 51, 851999, 65536, 52, 131092, 851968, 21, 131093, 917504, 21)
+layer_0/tile_data = PackedInt32Array(35, 327681, 2, 65571, 720897, 2, 0, 393217, 2, 1245184, 851969, 2, 1179648, 851969, 2, 1114112, 851969, 2, 1048576, 851969, 2, 983040, 851969, 2, 917504, 851969, 2, 851968, 851969, 2, 786432, 851969, 2, 720896, 851969, 2, 655360, 851969, 2, 589824, 851969, 2, 524288, 851969, 2, 458752, 851969, 2, 393216, 851969, 2, 327680, 851969, 2, 262144, 851969, 2, 196608, 851969, 2, 131072, 851969, 2, 65536, 851969, 2, 19, 0, 26, 65555, 0, 27, 20, 65536, 26, 65556, 65536, 27, 21, 131072, 26, 65557, 131072, 27, 1114113, 851968, 28, 1179649, 851968, 29, 1114114, 917504, 28, 1179650, 917504, 29, 655374, 851968, 28, 720910, 851968, 29, 655375, 917504, 28, 720911, 917504, 29, 983065, 851968, 28, 1048601, 851968, 29, 983066, 917504, 28, 1048602, 917504, 29, 262175, 851968, 28, 327711, 851968, 29, 262176, 917504, 28, 327712, 917504, 29, 327702, 851968, 28, 393238, 851968, 29, 327703, 917504, 28, 393239, 917504, 29, 327682, 851968, 28, 393218, 851968, 29, 327683, 851968, 29, 393219, 917504, 29, 262147, 851968, 28, 262148, 917504, 28, 327684, 917504, 29, 22, 196608, 26, 65558, 196608, 27)
 
 [node name="objects2" type="TileMap" parent="Floor/Walls/Obects1"]
 tile_set = SubResource("TileSet_7bnpn")
 rendering_quadrant_size = 32
 format = 2
-layer_0/tile_data = PackedInt32Array(786438, 458752, 64, 786439, 524288, 64, 458759, 720896, 13, 589831, 65536, 53, 655367, 65536, 54, 589841, 786432, 71, 655377, 786432, 72, 720913, 786432, 73, 589842, 851968, 71, 655378, 851968, 72, 720914, 851968, 73)
-
-[node name="MainChar" parent="." instance=ExtResource("3_g56y0")]
-position = Vector2(673, 68)
-
-[node name="boundaries" type="StaticBody2D" parent="."]
-position = Vector2(453, 192)
-
-[node name="center bookcase" type="CollisionShape2D" parent="boundaries"]
-position = Vector2(123.5, 118.08)
-shape = SubResource("RectangleShape2D_48ldo")
-
-[node name="top wall" type="CollisionShape2D" parent="boundaries"]
-shape = SubResource("SegmentShape2D_rgtg3")
-
-[node name="left wall" type="CollisionShape2D" parent="boundaries"]
-shape = SubResource("SegmentShape2D_5slip")
-
-[node name="bottom wall" type="CollisionShape2D" parent="boundaries"]
-shape = SubResource("SegmentShape2D_2iuxn")
-
-[node name="right wall" type="CollisionShape2D" parent="boundaries"]
-shape = SubResource("SegmentShape2D_22taq")
-
-[node name="couch" type="CollisionShape2D" parent="boundaries"]
-shape = SubResource("SegmentShape2D_fva10")
-
-[node name="coffee table" type="CollisionShape2D" parent="boundaries"]
-position = Vector2(509, 273)
-shape = SubResource("SegmentShape2D_j3exj")
-
-[node name="dining table" type="CollisionShape2D" parent="boundaries"]
-position = Vector2(-212.5, 115.916)
-shape = SubResource("RectangleShape2D_rnauc")
-
-[node name="chalkboard" type="CollisionShape2D" parent="boundaries"]
-position = Vector2(610.671, 64.6373)
-shape = SubResource("SegmentShape2D_4afcd")
-
-[node name="Elevator" type="Area2D" parent="."]
-script = ExtResource("4_28ehm")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Elevator"]
-position = Vector2(673, 35)
-shape = SubResource("RectangleShape2D_4x0jc")
-
-[connection signal="body_entered" from="Elevator" to="Elevator" method="_on_body_entered"]
-[connection signal="body_exited" from="Elevator" to="MainChar" method="_on_elevator_body_exited"]
