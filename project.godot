@@ -16,6 +16,14 @@ config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 <<<<<<<HEADrun/main_scene="res://scenes/main.tscn"
 
+[autoload]
+
+InteractionManager="*res://interaction/interaction_manager.tscn"
+
 [display]
 
 window/stretch/mode="viewport"
+
+[layer_names]
+
+2d_physics/layer_2="Actionable"

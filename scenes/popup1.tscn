@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://cg4pmts2x6awv"]
-
-[node name="Popup" type="Node2D"]
-
-[node name="Window" type="Window" parent="."]
-
-[node name="PopupMenu" type="PopupMenu" parent="Window"]
-title = "Menu"
