@@ -59,3 +59,7 @@ func _process(delta):
 	move_and_slide()
 
 	$AnimatedSprite2D.play(current_animation + a)
+
+
+func _on_elevator_body_exited(body):
+	pass # Replace with function body.
