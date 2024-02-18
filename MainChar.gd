@@ -1,7 +1,7 @@
 extends CharacterBody2D
 @onready var animated_sprite_2d = $AnimatedSprite2D
 
-const SPEED = 50.0
+const SPEED = 150.0
 #const JUMP_VELOCITY = -400.0
 
 # From tutorial: https://kidscancode.org/godot_recipes/3.x/2d/8_direction/index.html
